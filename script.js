@@ -4,7 +4,7 @@
  * Vanilla JavaScript Interactive Engine
  * 
  * Features:
- * - Opening Screen Surprise & 17th Age Counter Reveal
+ * - Opening Screen Surprise & 16th Age Counter Reveal
  * - Complete 17-Photo Gallery Engine with Fullscreen Lightbox Modal
  * - Canvas Confetti & Multi-Color Grand Fireworks Engine
  * - Dynamic Starry Background Particle Field
@@ -107,10 +107,10 @@ function initOpeningSurprise() {
   const ageNumberDisplay = document.getElementById('age-number-display');
   const replayBtn = document.getElementById('btn-replay-surprise');
 
-  // Animated Age Reveal: Count up from 0 to 17
+  // Animated Age Reveal: Count up from 0 to 16
   if (ageNumberDisplay) {
     setTimeout(() => {
-      animateNumberCount(ageNumberDisplay, 0, 17, 1600);
+      animateNumberCount(ageNumberDisplay, 0, 16, 1600);
     }, 1600);
   }
 
@@ -147,7 +147,7 @@ function initOpeningSurprise() {
         mainExperience.classList.remove('active');
         openingScreen.classList.remove('unveiled');
         if (ageNumberDisplay) {
-          ageNumberDisplay.textContent = '17';
+          ageNumberDisplay.textContent = '16';
         }
       }, 400);
     });
@@ -576,7 +576,7 @@ const blessingsCollection = [
   "“May God grant you supreme physical strength, an unshakeable mind, and the courage to conquer every obstacle.” 🛡️",
   "“Wear that uniform with immense pride soon, Yash! Khadakwasla is waiting for an officer like you.” 🇮🇳🎖️",
   "“Whenever you doubt yourself, remember who you are: a warrior born for greatness. We believe in you!” ✨",
-  "“May your 17th year be the breakthrough year that propels you straight into your grandest dreams!” 🚀",
+  "“May your 16th year be the breakthrough year that propels you straight into your grandest dreams!” 🚀",
   "“Discipline is the bridge between goals and accomplishment. Keep training, keep pushing, mere bhai!” ⚔️",
   "“No examination can measure your worth, but your dedication will inspire everyone around you.” 🤍",
   "“May every step you take bring you closer to commanding respect and serving our motherland with honor.” 🇮🇳",
@@ -719,9 +719,9 @@ const photoGalleryData = [
   { src: 'assets/photos/yash-photo-12.jpeg', title: 'Precious Moments', caption: 'Memories etched in gold that will last a lifetime.' },
   { src: 'assets/photos/yash-photo-13.jpeg', title: 'Resilience in Motion', caption: 'Never backing down, always rising above every hurdle.' },
   { src: 'assets/photos/yash-photo-14.jpeg', title: 'Our Future Officer', caption: 'Marching with dignity, honor, and patriotic fire in the soul.' },
-  { src: 'assets/photos/yash-photo-15.jpeg', title: '17 Years of Sunshine', caption: 'Bringing unconditional happiness to everyone around you.' },
+  { src: 'assets/photos/yash-photo-15.jpeg', title: '16 Years of Sunshine', caption: 'Bringing unconditional happiness to everyone around you.' },
   { src: 'assets/photos/yash-photo-16.jpeg', title: 'The Winning Team', caption: 'Together through thick and thin, no matter where life leads.' },
-  { src: 'assets/photos/yash-photo-17.jpeg', title: 'Yash Raj Bhaskar', caption: 'Happy 17th Birthday to the greatest brother in the world! ❤️' }
+  { src: 'assets/photos/yash-photo-17.jpeg', title: 'Yash Raj Bhaskar', caption: 'Happy 16th Birthday to the greatest brother in the world! ❤️' }
 ];
 
 let currentLightboxIndex = 0;
