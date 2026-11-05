@@ -833,6 +833,45 @@ function initPhotoGalleryAndLightbox() {
     if (e.key === 'ArrowRight') showNextPhoto();
     if (e.key === 'ArrowLeft') showPrevPhoto();
   });
+
+  // Touch swipe support for mobile & tablet devices
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+
+  if (lightboxModal) {
+    lightboxModal.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    lightboxModal.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      handleLightboxSwipe();
+    }, { passive: true });
+  }
+
+  function handleLightboxSwipe() {
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+    const absDiffX = Math.abs(diffX);
+    const absDiffY = Math.abs(diffY);
+
+    // Horizontal swipe threshold
+    if (absDiffX > 45 && absDiffX > absDiffY) {
+      if (diffX < 0) {
+        showNextPhoto(); // Swiped left -> next photo
+      } else {
+        showPrevPhoto(); // Swiped right -> prev photo
+      }
+    } 
+    // Swipe down to dismiss
+    else if (diffY > 70 && absDiffY > absDiffX) {
+      closeLightbox(); // Swiped down -> close lightbox
+    }
+  }
 }
 
 /* ============================================================================
