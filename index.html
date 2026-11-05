@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#060911" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Happy 17th Birthday, Yash Raj Bhaskar! ❤️ | 6th November</title>
+  
+  <!-- Meta description -->
+  <meta name="description" content="A heartfelt, royal 17th birthday tribute dedicated with infinite love, blessings, and pride to my brother Yash Raj Bhaskar." />
+
+  <!-- Google Fonts: Luxurious Serifs & Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Starry Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Celebratory FX Canvases -->
+  <canvas id="confetti-canvas"></canvas>
+  <canvas id="fireworks-canvas"></canvas>
+
+  <!-- ========================================================================
+       FLOATING AUDIO CONTROLLER
+       - Muted & paused by default (web audio standards)
+       - Toggle to play/pause anytime with custom animated equalizer
+       ======================================================================== -->
+  <div class="music-toggle-container">
+    <button id="music-toggle-btn" class="music-toggle-btn" aria-label="Toggle background birthday music">
+      <div class="music-equalizer">
+        <span class="equalizer-bar"></span>
+        <span class="equalizer-bar"></span>
+        <span class="equalizer-bar"></span>
+        <span class="equalizer-bar"></span>
+      </div>
+      <span id="music-toggle-text">Play Music 🎵</span>
+    </button>
+  </div>
+
+  <!-- Background Music Audio Element -->
+  <audio id="bg-music" src="assets/birthday-music.mp3" preload="auto" loop></audio>
+
+
+  <!-- ========================================================================
+       SECTION 1: THE OPENING SCREEN — THE BIG SURPRISE
+       ======================================================================== -->
+  <section id="opening-screen" aria-label="Birthday Surprise Opening">
+    <div class="opening-content">
+      
+      <!-- Teaser Tag -->
+      <div class="teaser-text">
+        "Someone Very Special Was Born Today..."
+      </div>
+
+      <!-- Main Birthday Reveal Title -->
+      <h1 class="birthday-hero-title">
+        HAPPY 17TH BIRTHDAY, YASH RAJ BHASKAR! 🎂
+      </h1>
+
+      <!-- Landmark Dates -->
+      <div class="birthday-dates">
+        <span>6 November 2009</span> &nbsp;—&nbsp; <span>6 November 2026</span>
+      </div>
+
+      <!-- Animated 17th Age Counter Reveal -->
+      <div class="age-reveal-container">
+        <div class="age-badge-halo">
+          <div class="age-number" id="age-number-display">0</div>
+        </div>
+        <div class="age-label">
+          ✨ 17 Glorious Years Of Brotherhood & Strength ✨
+        </div>
+      </div>
+
+      <!-- Glowing CTA Button -->
+      <div>
+        <button id="btn-open-surprise" class="btn-surprise-glow">
+          <span class="btn-icon">🎁</span>
+          <span>Open Your Birthday Surprise, Mere Bhai ❤️</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       MAIN BIRTHDAY EXPERIENCE (Revealed after clicking 'Open Your Surprise')
+       ======================================================================== -->
+  <main id="main-card-experience">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: SPOTLIGHT MEMORY SECTION (Hero Photo of Yash Raj Bhaskar)
+         ---------------------------------------------------------------------- -->
+    <section id="memory-section" class="section memory-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">A Bond Beyond Words</div>
+          <h2 class="section-title">Yash Raj Bhaskar — Our Pride & Champion</h2>
+          <div class="gold-divider"><span>★ ★ ★</span></div>
+          <p class="section-desc">
+            Growing up beside you has been life's greatest blessing. You are not just my younger brother; you are my greatest pride, strength, and partner in every journey.
+          </p>
+        </div>
+
+        <div class="photo-stage">
+          <div class="photo-frame-wrapper">
+            <!-- Dual Glowing Rotating Halos -->
+            <div class="photo-halo-outer"></div>
+            <div class="photo-halo-inner"></div>
+
+            <div class="photo-frame" id="hero-photo-frame" title="Click to view in full resolution!">
+              <img 
+                src="assets/photos/yash-photo-3.jpeg" 
+                alt="Yash Raj Bhaskar on his 17th Birthday" 
+                class="brother-photo" 
+                id="brother-photo-img"
+              />
+              <div class="photo-shimmer"></div>
+            </div>
+          </div>
+
+          <!-- Photograph Caption -->
+          <div class="photo-caption-badge">
+            <span>❤️</span>
+            <span>One of the most special people in my life — Yash Raj Bhaskar</span>
+            <span>❤️</span>
+          </div>
+
+          <!-- Quick Milestone Metrics -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-num">17</div>
+              <div class="metric-title">Years of Greatness</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">6,209+</div>
+              <div class="metric-title">Days of Happiness</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">100%</div>
+              <div class="metric-title">Unconditional Love</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">🇮🇳 NDA</div>
+              <div class="metric-title">Future Officer In The Making</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: HEARTFELT BIRTHDAY MESSAGE (The Brother's Letter & Blessings)
+         ---------------------------------------------------------------------- -->
+    <section id="message-section" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Straight From The Heart</div>
+          <h2 class="section-title">A Letter For You, Yash</h2>
+          <div class="gold-divider"><span>❤️ ✦ ❤️</span></div>
+        </div>
+
+        <div class="letter-wrapper">
+          <div class="letter-card">
+            
+            <div class="letter-header">
+              <div class="letter-salutation">
+                "Happy Birthday, Yash! Mere bhai! ❤️"
+              </div>
+              <div class="letter-seal" title="Sealed with Love">
+                17
+              </div>
+            </div>
+
+            <!-- Heartfelt Text Body -->
+            <div class="letter-body">
+              <p class="letter-paragraph highlight">
+                Today is your special day, and I just want you to know how much you mean to us.
+              </p>
+
+              <p class="letter-paragraph">
+                May God bless you with endless happiness, good health, strength, wisdom, and success. May every step you take bring you closer to your dreams.
+              </p>
+
+              <!-- Dedicated Blessing: Grow More & Become More Powerful -->
+              <p class="letter-paragraph power-wish">
+                <strong>My special blessing for you today:</strong> Grow more, stand taller, and become more powerful every single day! Build a physique of iron, a mind as sharp as a sword, and a heart as pure as gold. Let no obstacle ever intimidate you.
+              </p>
+
+              <!-- Dedicated Blessing: Selection in NDA -->
+              <p class="letter-paragraph highlight">
+                May all your rigorous preparation, early mornings, and sacrifices pay off soon, and <strong>may you get selected in the National Defence Academy (NDA) with flying colours! 🇮🇳</strong> We cannot wait to see you marching in that prestigious uniform.
+              </p>
+
+              <p class="letter-paragraph">
+                Never stop believing in yourself. Keep working hard, stay disciplined, and always remember that you are capable of achieving amazing things.
+              </p>
+
+              <p class="letter-paragraph highlight">
+                We might not express it every day, but <strong>we love you more than words can explain</strong>. We are incredibly proud of you, and we will always be there for you.
+              </p>
+
+              <p class="letter-paragraph">
+                Keep smiling, keep growing, and keep making beautiful memories.
+              </p>
+
+              <p class="letter-paragraph" style="font-size: 1.25rem; font-weight: 700; color: var(--gold-bright);">
+                Happy 17th Birthday, champ! ❤️
+              </p>
+            </div>
+
+            <!-- Letter Signature -->
+            <div class="letter-closing">
+              <div class="letter-sign-family">Forever by your side,</div>
+              <div class="letter-sign-sub">Your loving brother & family ❤️</div>
+            </div>
+
+            <!-- Letter Action Buttons -->
+            <div class="letter-actions">
+              <button id="btn-read-letter" class="btn-secondary-pill" title="Listen to this letter read out loud">
+                <span>🔊</span>
+                <span>Listen to Letter</span>
+              </button>
+              <button id="btn-copy-letter" class="btn-secondary-pill" title="Copy this heartfelt wish">
+                <span>📋</span>
+                <span>Copy Wish</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: SPECIAL NDA PREPARATION SECTION 🇮🇳 (Mission Khadakwasla)
+         ---------------------------------------------------------------------- -->
+    <section id="nda-section" class="section nda-section">
+      <!-- Ambient Tricolour Glow Orbs -->
+      <div class="nda-glow-saffron"></div>
+      <div class="nda-glow-green"></div>
+
+      <!-- Watermark Ashok Chakra Silhouette -->
+      <svg class="nda-watermark" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="4" stroke-dasharray="6 6"/>
+        <circle cx="100" cy="100" r="30" stroke="currentColor" stroke-width="4"/>
+        <g stroke="currentColor" stroke-width="2">
+          <!-- 24 Spokes of Ashok Chakra -->
+          <line x1="100" y1="10" x2="100" y2="190"/>
+          <line x1="10" y1="100" x2="190" y2="100"/>
+          <line x1="36.36" y1="36.36" x2="163.64" y2="163.64"/>
+          <line x1="36.36" y1="163.64" x2="163.64" y2="36.36"/>
+          <line x1="18.37" y1="67.36" x2="181.63" y2="132.64"/>
+          <line x1="18.37" y1="132.64" x2="181.63" y2="67.36"/>
+          <line x1="67.36" y1="18.37" x2="132.64" y2="181.63"/>
+          <line x1="67.36" y1="181.63" x2="132.64" y2="18.37"/>
+        </g>
+      </svg>
+
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="nda-tag-badge">
+            <span>🇮🇳</span>
+            <span>National Defence Academy • Cadet In The Making</span>
+            <span>🇮🇳</span>
+          </div>
+          <h2 class="nda-heading">
+            THE DREAM IS BIG. SO IS OUR FAITH IN YOU.
+          </h2>
+          <div class="nda-motto">
+            "सेवा परमो धर्मः" — Service Before Self • Dedicated to Yash Raj Bhaskar
+          </div>
+        </div>
+
+        <div class="nda-card-main">
+          <!-- Indian Tricolour Divider Bar -->
+          <div class="nda-tricolour-bar">
+            <span class="bar-saffron"></span>
+            <span class="bar-white"></span>
+            <span class="bar-green"></span>
+          </div>
+
+          <!-- Cadet Spotlight Trio Photos of Yash -->
+          <div class="nda-cadet-trio">
+            <div class="nda-photo-card" title="Yash Raj Bhaskar — The Warrior Spirit">
+              <img src="assets/photos/yash-photo-5.jpeg" alt="Yash Raj Bhaskar focused and disciplined" />
+              <div class="nda-photo-tag">★ Focus & Discipline ★</div>
+            </div>
+            <div class="nda-photo-card" title="Yash Raj Bhaskar — Courage and Resolve">
+              <img src="assets/photos/yash-photo-8.jpeg" alt="Yash Raj Bhaskar strong and determined" />
+              <div class="nda-photo-tag">★ Courage & Resolve ★</div>
+            </div>
+            <div class="nda-photo-card" title="Yash Raj Bhaskar — Destined for Khadakwasla">
+              <img src="assets/photos/yash-photo-14.jpeg" alt="Yash Raj Bhaskar future officer" />
+              <div class="nda-photo-tag">★ Future Officer ★</div>
+            </div>
+          </div>
+
+          <div class="nda-content-body">
+            <p>
+              We know how hard you are working for your NDA dream, Yash. The discipline, dedication, sacrifices, and effort you put into your preparation will always make us proud.
+            </p>
+
+            <p>
+              We pray that you get the opportunity to wear that uniform soon and serve our nation with honour and courage.
+            </p>
+
+            <p>
+              May God give you the strength to overcome every challenge, the wisdom to learn from every mistake, and the determination to never give up.
+            </p>
+
+            <p style="font-weight: 700; color: #ffffff; font-size: 1.25rem;">
+              But listen carefully, brother...
+            </p>
+
+            <p>
+              If you clear the NDA, we will celebrate your success with all our hearts.
+            </p>
+
+            <p>
+              And if things don't go as planned, that's okay too.
+            </p>
+
+            <!-- ========================================================
+                 STANDOUT UNCONDITIONAL LOVE PLEDGE
+                 ======================================================== -->
+            <div class="nda-unconditional-pledge">
+              <div class="pledge-bold-text">
+                "Even if you fail, even if you have to try again, or even if life takes you in a completely different direction, our love and respect for you will NEVER change."
+              </div>
+              <div class="pledge-sub-text">
+                You are not defined by an examination, a result, or a uniform, Yash.<br />
+                We love you for who you are, not for what you achieve.<br />
+                Your happiness matters more than any result. We will always stand beside you, no matter what.<br />
+                So give your best, chase your dreams, and leave the rest to God.
+              </div>
+            </div>
+
+            <!-- Punchline -->
+            <div class="nda-punchline">
+              One exam cannot define your worth. <span>You will always make us proud, Yash! ❤️🇮🇳</span>
+            </div>
+
+            <!-- NDA Core Pillars -->
+            <div class="nda-values-grid">
+              <div class="nda-value-card">
+                <div class="nda-value-icon">⚔️</div>
+                <div class="nda-value-title">Discipline</div>
+                <div class="nda-value-desc">The daily sweat and focus turning every effort into military excellence.</div>
+              </div>
+              <div class="nda-value-card">
+                <div class="nda-value-icon">🛡️</div>
+                <div class="nda-value-title">Strength & Power</div>
+                <div class="nda-value-desc">Building an unstoppable mind, body, and warrior's fortitude.</div>
+              </div>
+              <div class="nda-value-card">
+                <div class="nda-value-icon">🇮🇳</div>
+                <div class="nda-value-title">NDA Honor</div>
+                <div class="nda-value-desc">Carrying the glory of the tricolour into every examination and interview.</div>
+              </div>
+              <div class="nda-value-card">
+                <div class="nda-value-icon">❤️</div>
+                <div class="nda-value-title">Our Backing</div>
+                <div class="nda-value-desc">No matter the outcome, you will always have our infinite pride and support.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: THE COMPLETE 17-PHOTO MEMORY GALLERY (All 17 Photographs)
+         ---------------------------------------------------------------------- -->
+    <section id="gallery-section" class="section gallery-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Cherished Moments</div>
+          <h2 class="section-title">17 Years • 17 Unforgettable Memories</h2>
+          <div class="gold-divider"><span>📸 ✦ 📸</span></div>
+          <p class="section-desc">
+            Seventeen priceless snapshots celebrating Yash Raj Bhaskar's journey — each representing a milestone of laughter, strength, brotherhood, and dreams! Click any photo to view in high resolution.
+          </p>
+        </div>
+
+        <div class="gallery-stats-banner">
+          <div class="gallery-stat-pill">
+            <span>📷</span>
+            <span>17 Full-Resolution Photographs</span>
+          </div>
+          <div class="gallery-stat-pill">
+            <span>✨</span>
+            <span>Click Any Image to Enlarge & Navigate</span>
+          </div>
+          <div class="gallery-stat-pill">
+            <span>🦁</span>
+            <span>Yash Raj Bhaskar's Golden Journey</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid for all 17 Photos -->
+        <div class="gallery-grid" id="photo-gallery-grid">
+          <!-- Rendered dynamically by script.js with all 17 photos -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: BLESSINGS & WISHES (Power, Growth & Success)
+         ---------------------------------------------------------------------- -->
+    <section id="blessings-section" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Pure Intentions</div>
+          <h2 class="section-title">Blessings For Power, Growth & Glory</h2>
+          <div class="gold-divider"><span>✨ ★ ✨</span></div>
+          <p class="section-desc">
+            Six heartfelt prayers for Yash Raj Bhaskar on his milestone 17th birthday.
+          </p>
+        </div>
+
+        <div class="blessings-grid">
+          
+          <!-- Card 1 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">🛡️</div>
+            <h3 class="blessing-title">Divine Protection</h3>
+            <p class="blessing-desc">
+              May God always protect you, shielding you from harm, negativity, and doubt wherever your path leads.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">⚡</div>
+            <h3 class="blessing-title">Power & Unstoppable Growth</h3>
+            <p class="blessing-desc">
+              May you grow taller in wisdom, stronger in body, and infinitely more powerful in character with each passing day.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">🇮🇳</div>
+            <h3 class="blessing-title">NDA Selection & Victory</h3>
+            <p class="blessing-desc">
+              May your hard preparation bear fruit soon, and may you earn that cadet badge to wear the military uniform with pride!
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">🦁</div>
+            <h3 class="blessing-title">Lionhearted Courage</h3>
+            <p class="blessing-desc">
+              May you have the courage to face every challenge with the fearless heart and resolute spirit of a true warrior.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">☀️</div>
+            <h3 class="blessing-title">Supreme Health & Joy</h3>
+            <p class="blessing-desc">
+              May peak physical fitness, vibrant health, and boundless happiness walk alongside you every step of the way.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="blessing-card">
+            <div class="blessing-icon-halo">👑</div>
+            <h3 class="blessing-title">Dreams Turned To Reality</h3>
+            <p class="blessing-desc">
+              May every ambitious vision you hold in your heart transform into a monumental victory that inspires the world.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: INTERACTIVE BIRTHDAY SURPRISE ZONE
+         ---------------------------------------------------------------------- -->
+    <section id="interactive-section" class="section interactive-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Interactive Fun</div>
+          <h2 class="section-title">Your Special Birthday Surprise Box</h2>
+          <div class="gold-divider"><span>🎁 ✨ 🎁</span></div>
+          <p class="section-desc">
+            Tap the gift box below to reveal what lies inside, or tap for a daily dose of brotherly inspiration!
+          </p>
+        </div>
+
+        <div class="interactive-grid">
+          
+          <!-- Interactive Card 1: 3D Gift Box Surprise -->
+          <div class="interactive-card">
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem;">Unbox A Family Secret</h3>
+            <p id="gift-box-hint" style="color: var(--text-gold); font-size: 0.95rem; font-weight: 600;">
+              Tap to Unbox Your Special Gift 🎁
+            </p>
+
+            <div class="gift-box-container" id="interactive-gift-container" title="Click to open the gift!">
+              <div class="gift-box">
+                <div class="gift-box-base">
+                  <div class="gift-box-ribbon-v"></div>
+                  <div class="gift-box-ribbon-h"></div>
+                </div>
+                <div class="gift-box-lid">
+                  <div class="gift-box-ribbon-v"></div>
+                  <div class="gift-box-bow">🎀</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Revealed Surprise Message -->
+            <div class="gift-reveal-content" id="gift-reveal-content">
+              <div class="gift-message-box">
+                <p class="gift-message-quote">
+                  "Your biggest gift is knowing that you will never have to face life alone. We are always with you, Yash. ❤️"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Card 2: Random Blessing Generator -->
+          <div class="interactive-card">
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem;">Daily Token of Strength</h3>
+            <p style="color: var(--text-subtle); font-size: 0.95rem;">
+              Click anytime you need a boost of inspiration, power, or NDA motivation.
+            </p>
+
+            <div class="blessing-display-window">
+              <div class="blessing-text-target" id="blessing-text-target">
+                “Yash, may your discipline turn into your greatest weapon, and may you clear the NDA exam with flying colours!” 🦁🇮🇳
+              </div>
+            </div>
+
+            <button id="btn-get-blessing" class="btn-gold-interactive">
+              <span>✨</span>
+              <span>Click for a Special Blessing ✨</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Global Celebration Action Buttons -->
+        <div class="interactive-action-row">
+          <button id="btn-send-heart" class="btn-floating-heart" title="Send love and floating hearts">
+            <span>❤️</span>
+            <span>Send Him Love ❤️</span>
+          </button>
+          <button id="btn-celebrate-confetti" class="btn-confetti-blast" title="Launch a colorful confetti burst">
+            <span>🎊</span>
+            <span>Celebrate Him! 🎊</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 8: FINAL SCREEN — GRAND BIRTHDAY FINALE
+         ---------------------------------------------------------------------- -->
+    <section id="finale-section" class="finale-section">
+      <div class="container">
+        
+        <div class="finale-badge">A Heartfelt Finale</div>
+        
+        <h2 class="finale-title">
+          Happy 17th Birthday Once Again, Yash Raj Bhaskar!
+        </h2>
+
+        <div class="finale-triad">
+          Dream Big.<span>✦</span>Grow Powerful.<span>✦</span>Win NDA.<span>✦</span>Keep Smiling.
+        </div>
+
+        <p class="finale-wish">
+          May your journey be filled with courage, happiness, strength, and countless victories. May you soon wear that military uniform and lead with supreme honour!
+        </p>
+
+        <!-- Huge Glowing Family Proclamation -->
+        <div class="finale-love-proclamation">
+          WE LOVE YOU, YASH! PROUD OF YOU ALWAYS! ❤️
+        </div>
+
+        <!-- Finale Action Buttons -->
+        <div class="finale-actions">
+          <button id="btn-launch-fireworks" class="btn-gold-interactive">
+            <span>🎆</span>
+            <span>Launch Grand Fireworks 🎆</span>
+          </button>
+          <button id="btn-replay-surprise" class="btn-secondary-pill">
+            <span>🔄</span>
+            <span>Replay Birthday Surprise</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Note -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Crafted with endless love, blessings & pride for Yash Raj Bhaskar's 17th Birthday <span>❤️</span> • 6th November 2026
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ========================================================================
+       FULLSCREEN LIGHTBOX MODAL FOR ALL 17 PHOTOGRAPHS
+       ======================================================================== -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close photo preview">✕</button>
+    <button id="lightbox-prev-btn" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous photo">‹</button>
+    <button id="lightbox-next-btn" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next photo">›</button>
+
+    <div class="lightbox-content-box">
+      <img id="lightbox-img" src="" alt="Yash Raj Bhaskar Memory" class="lightbox-img" />
+      <div class="lightbox-caption-wrap">
+        <div id="lightbox-caption-title" class="lightbox-caption-title"></div>
+        <div id="lightbox-counter" class="lightbox-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
