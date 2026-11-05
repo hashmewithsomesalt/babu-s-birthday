@@ -721,7 +721,8 @@ const photoGalleryData = [
   { src: 'assets/photos/yash-photo-14.jpeg', title: 'Our Future Officer', caption: 'Marching with dignity, honor, and patriotic fire in the soul.' },
   { src: 'assets/photos/yash-photo-15.jpeg', title: '16 Years of Sunshine', caption: 'Bringing unconditional happiness to everyone around you.' },
   { src: 'assets/photos/yash-photo-16.jpeg', title: 'The Winning Team', caption: 'Together through thick and thin, no matter where life leads.' },
-  { src: 'assets/photos/yash-photo-17.jpeg', title: 'Yash Raj Bhaskar', caption: 'Happy 16th Birthday to the greatest brother in the world! ❤️' }
+  { src: 'assets/photos/yash-photo-17.jpeg', title: 'Yash Raj Bhaskar', caption: 'Happy 16th Birthday to the greatest brother in the world! ❤️' },
+  { src: 'assets/photos/papa_pic.jpeg', title: "Papa's Guiding Light", caption: "The pillar of strength, love, and unwavering faith behind Yash's journey. ❤️" }
 ];
 
 let currentLightboxIndex = 0;
